@@ -6,7 +6,7 @@ public class TaskSeven {
 
         int count = 0;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите число: ");
+        System.out.print("Введите число: ");
         int number = scanner.nextInt();
 
         for (int i = 1; i <= number; i++) {
@@ -15,7 +15,7 @@ public class TaskSeven {
             }
         }
 
-        if (count <= 2) {
+        if (count == 2) {
             System.out.println("Число " + number + " — простое");
         } else {
             System.out.println("Число " + number + " — не простое");

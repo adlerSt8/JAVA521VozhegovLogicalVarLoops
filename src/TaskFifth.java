@@ -5,12 +5,16 @@ public class TaskFifth {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите число: ");
-        int number = scanner.nextInt();
+        System.out.print("Введите число: ");
 
-        while (number != 0) {
-            System.out.println(number);
-            number --;
+        if (scanner.hasNextInt()) {
+            int number = scanner.nextInt();
+            while (number > 0) {
+                System.out.println(number);
+                number --;
+            }
+        } else {
+            System.out.println("Ошибка! Введено не число!");
         }
         scanner.close();
     }

@@ -5,7 +5,7 @@ public class TaskSixth {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите номер месяца: ");
+        System.out.print("Введите номер месяца: ");
         int numberMonth = scanner.nextInt();
 
         switch (numberMonth) {
@@ -44,6 +44,9 @@ public class TaskSixth {
                 break;
             case 12:
                 System.out.println("Декабрь находится в зимнем сезоне.");
+                break;
+            default:
+                System.out.println("Неизвестный сезон.");
                 break;
         }
         scanner.close();

@@ -5,12 +5,17 @@ public class TaskFourth {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите число: ");
-        int number = scanner.nextInt();
+        System.out.print("Введите число: ");
 
-        for (int i = 1; i <= 10; i++) {
-            System.out.println(number + " x " + i + " = " + number * i);
+        if (scanner.hasNextInt()) {
+            int number = scanner.nextInt();
+            for (int i = 1; i <= 10; i++) {
+                System.out.println(number + " x " + i + " = " + number * i);
+            }
+        } else {
+            System.out.println("Ошибка! Введено не число!");
         }
+
         scanner.close();
     }
 }

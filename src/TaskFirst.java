@@ -9,12 +9,13 @@ public class TaskFirst {
         double averageValue;
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Введите первое число: ");
+        System.out.print("Введите первое число: ");
         numberFirst = scanner.nextInt();
-        System.out.println("Введите второе число: ");
+        System.out.print("Введите второе число: ");
         numberSecond = scanner.nextInt();
+
         sumNumber = numberFirst + numberSecond;
-        averageValue = (double) (numberFirst + numberSecond) / 2;
+        averageValue = (double) sumNumber / 2;
         System.out.println("Сумма: " + sumNumber);
         System.out.println("Среднее значение: " + averageValue);
 

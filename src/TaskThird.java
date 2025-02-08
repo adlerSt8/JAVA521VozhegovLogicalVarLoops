@@ -5,15 +5,20 @@ public class TaskThird {
     public static void main(String[] args) {
 
         int factorialNumber;
-        int factorialSum = 1;
+        int result = 1;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите число: ");
+        System.out.print("Введите число: ");
         factorialNumber = scanner.nextInt();
 
-        for (int i = 1; i <= factorialNumber; i++) {
-            factorialSum *= i;
-        }
-        System.out.println("Факториал числа " + factorialNumber + " равен " + factorialSum);
+
+        if (factorialNumber >= 0) {
+            for (int i = 1; i <= factorialNumber; i++) {
+                result *= i;
+            }
+            System.out.println("Факториал числа " + factorialNumber + " равен " + result);
+        } else {
+                System.out.println("Ошибка! Факториал не может быть отрицательным");
+            }
         scanner.close();
     }
 }

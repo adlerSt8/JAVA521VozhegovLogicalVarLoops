@@ -5,7 +5,7 @@ public class TaskSecond {
     public static void main(String[] args) {
         int number;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите число: ");
+        System.out.print("Введите число: ");
         number = scanner.nextInt();
         String evenOdd = number % 2 == 0? "Число " + number + " — четное" : "Число " + number + " — нечетное";
 
