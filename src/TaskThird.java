@@ -10,7 +10,6 @@ public class TaskThird {
         System.out.print("Введите число: ");
         factorialNumber = scanner.nextInt();
 
-
         if (factorialNumber >= 0) {
             for (int i = 1; i <= factorialNumber; i++) {
                 result *= i;

@@ -6,10 +6,15 @@ public class TaskSecond {
         int number;
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите число: ");
-        number = scanner.nextInt();
-        String evenOdd = number % 2 == 0? "Число " + number + " — четное" : "Число " + number + " — нечетное";
 
-        System.out.println(evenOdd);
+        if (scanner.hasNextInt()) {
+            number = scanner.nextInt();
+            String evenOdd = number % 2 == 0
+                    ? "Число " + number + " — четное"
+                    : "Число " + number + " — нечетное";
+        } else {
+            System.out.println("Ошибка! Введено не число!");
+        }
         scanner.close();
     }
 }
